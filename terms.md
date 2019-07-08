@@ -27,23 +27,23 @@
 
     - set @myCounter
     
-          ```
-             Declare  @balance int,
-             
-             @total int
-             
-             set @balance=1000
-            
-             set @total = @balance*1.02
-             
-             print 'The total is:'+cast(@total as char)
-          ```
+```
+   Declare  @balance int,
+   
+   @total int
+   
+   set @balance=1000
+  
+   set @total = @balance*1.02
+   
+   print 'The total is:'+cast(@total as char)
+```
 - If the value is related to the tables, then SELECT it:
 
     - declare a variable with a cell of tables
     
-          ```
-             declare @variable varchar(12)
-            
-             select @variable=  姓名 from 學生 where 學號='S001'
-          ```
+ ```
+    declare @variable varchar(12)
+   
+    select @variable=  姓名 from 學生 where 學號='S001'
+ ```
