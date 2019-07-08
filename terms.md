@@ -54,5 +54,25 @@ select @total=sum(學分) from 課程
 set @total= (select sum(學分) from 課程)
 print ('總學分:'+ cast(@total as char))
  ```
+
+- variable as table
+ ```
+declare @students table(
+學號 char(12),
+姓名 char(12)
+)
+insert @students select 學號,姓名 from 學生 where 性別='女'
+select * from @students
+ ```
+ 
+ ## System Function, = Global Variables
+ 
+ - @@IDENTITY
+ 
+ - @@ROWCOUNT
+ 
+ - @@ERROR
+ 
+ - @@SERVERNAME
  
  
