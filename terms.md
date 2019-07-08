@@ -47,3 +47,12 @@
    
     select @variable=  姓名 from 學生 where 學號='S001'
  ```
+   - these two command have the same result
+ ```
+Declare @total int
+select @total=sum(學分) from 課程
+set @total= (select sum(學分) from 課程)
+print ('總學分:'+ cast(@total as char))
+ ```
+ 
+ 
