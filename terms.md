@@ -25,7 +25,8 @@
   ```
 - Declare w/o initial value and then SET it, including making a calculating:
 
-          - set @myCounter
+    - set @myCounter
+    
           ```
              Declare  @balance int,
              
@@ -39,7 +40,8 @@
           ```
 - If the value is related to the tables, then SELECT it:
 
-          - declare a variable with a cell of tables 
+    - declare a variable with a cell of tables
+    
           ```
              declare @variable varchar(12)
             
