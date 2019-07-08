@@ -21,7 +21,7 @@
 
   >Declare  @balance int,
   >
-  >         @total int
+  > @total int
   >
   >set @balance=1000
   >
