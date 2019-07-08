@@ -14,16 +14,16 @@
 - @Local variables
 - @@Global Variables
 
-### There are some ways to declare/ set a variable:
+#### There are some ways to declare/ set a variable:
 
-1. Declare a variable with initial value.
+#####1. Declare a variable with initial value.
 
 - Declare @myName varchar(12), 
           @amount int=123,
           @myCounter int
   print @amount
   
-2. Declare w/o initial value and then SET it, including making a calculating:
+#####2. Declare w/o initial value and then SET it, including making a calculating:
 
 - set @myCounter
 
@@ -37,7 +37,7 @@
   >
   >print 'The total is:'+cast(@total as char)
 
-3. If the value is related to the tables, then SELECT it:
+#####3. If the value is related to the tables, then SELECT it:
 
 - declare a variable with a cell of tables 
   > declare @variable varchar(12)
