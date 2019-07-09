@@ -75,6 +75,13 @@ select * from @students   ---print the table
  
  - @@SERVERNAME
  
+ ## Expression = Operands + Operators
+ 
+ - Operators:
+ ```
+
+ ```
+ 
  
  
  
