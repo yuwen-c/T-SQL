@@ -61,18 +61,20 @@ declare @students table(
 學號 char(12),
 姓名 char(12)
 )
-insert @students select 學號,姓名 from 學生 where 性別='女'
-select * from @students
+insert @students select 學號,姓名 from 學生 where 性別='女'    ---insert + table + select condition
+select * from @students   ---print the table
  ```
  
  ## System Function, = Global Variables
  
- - @@IDENTITY
+ - @@IDENTITY: return the last number of identity column, if not=> null
  
- - @@ROWCOUNT
+ - @@ROWCOUNT: return that how many rows are effected
  
- - @@ERROR
+ - @@ERROR: return the number of error message, if not=> 0
  
  - @@SERVERNAME
+ 
+ 
  
  
